@@ -2,13 +2,16 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to top left, #43cea2, #185a9d);
+  background-image: url(pokertable.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #super-container {
   /* Överordnad container som innehåller de mindre */
   display: flex; /* Flex ger ett rutmönster */
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   padding: 3%; /* Marginal mot webbläsarfönstret */
   margin-top: 10px;
@@ -53,4 +56,27 @@ body {
   border-width: 1.5px;
   border-radius: 15px; /* Rundade hörn */
   display: none;
+}
+
+.card-slot {
+  border: 2px solid yellow;
+  width: 65px;
+  height: 95px;
+  background-size: cover;
+}
+
+.playerrow {
+  display: flex; /* Flex ger ett rutmönster */
+  flex-direction: row;
+  position: absolute;
+  left: 45%;
+  top: 70%;
+}
+
+#dealerrow {
+  display: flex; /* Flex ger ett rutmönster */
+  flex-direction: row;
+  position: absolute;
+  left: 37%;
+  top: 30%;
 }
